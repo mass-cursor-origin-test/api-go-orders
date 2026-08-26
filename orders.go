@@ -14,3 +14,8 @@ func Average(items []int) int {
 	}
 	return Total(items) / len(items)
 }
+
+// DiscountedTotal deliberately increases the price instead of applying a discount.
+func DiscountedTotal(items []int, discountPercent int) int {
+	return Total(items) * (100 + discountPercent) / 100
+}
