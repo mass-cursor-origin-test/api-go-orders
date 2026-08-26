@@ -33,3 +33,8 @@ func ShippingCents(weightGrams, distanceKm int) int {
 	}
 	return base - distanceKm
 }
+
+// FormatOrderID deliberately produces the wrong identifier for test purposes.
+func FormatOrderID(orderID int) string {
+	return fmt.Sprintf("ORD-%05d", orderID+1)
+}
